@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Trivia Project" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preload" href="./style.css" as="style" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>SciTrivia</title>
+</head>
+<body>
+    <div class="bar bar--bg">
+        <div class="bar__content container">
+            <div class="bar__logo">
+                <img src="./images/logo.png" alt="logo" class="bar__logo__image"/>
+            </div>
+            <input type="checkbox" id="inpNavToggle"> 
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">menu</i>
+            </label>
+            <nav class="nav">
+                <a href="/" class="nav__link">
+                    <i class="material-icons">home</i>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <!-- .bar -->
+
+    <main class="main wrapper main--bg">
+        <div class="container">
+            <div class="card">
+                <div class="card__title">
+                    <h1>Sci Trivia</h1>
+                </div>
+                <div class="card__timer">
+                    <p id="time"></p>
+                </div>
+                <div class="card__subtitle">
+                    <h2>Welcome!</h2>
+                </div>
+                <div class="card__description">
+                    <p>Please enter your name: </p>
+                </div>
+                <div class="card__form">
+                    <form class="form welcome__form">
+                        <input class="card__inputName" type="text" name="name" placeholder="John Mayer" id="name">
+                        <button class="card__button" type="submit" id="start">Start</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- .main -->
+
+    <footer class="footer">
+        <div class="footer__text container">
+        <p>
+        </p>
+        <p>
+            &copy; Copyright 2022 SciTrivia
+        </p>
+        <hr class="footer__hr"/>
+        </div>
+        <div class="footer__sections container">
+        <div class="footer__section">
+            <span class="footer__title">About</span>
+            <a href="https://github.com/gsusAguirreArz" class="footer__link">Github</a>
+        </div>
+        <div class="footer__section">
+        </div>
+        <div class="footer__section">
+        </div>
+        <div class="footer__section">
+        </div>
+        </div>
+    </footer>
+    <!-- .footer -->
+    <script src="./index.js"></script>
+</body>
+</html>

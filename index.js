@@ -453,24 +453,38 @@ function cardChange( newContent ) {
 }
 
 function navBarAnim(){
-  const observer = new IntersectionObserver( entries => {
-    document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9);
-  }, {
-    threshold: 0.9
-  });
-  
-  observer.observe(document.querySelector(".main"));
+    /**
+     * Function that detects the intersection of the navbar with the main element to toggle a color change
+     */
+    const observer = new IntersectionObserver( entries => {
+        document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9);
+    }, {
+        threshold: 0.9
+    });
+    
+    observer.observe(document.querySelector(".main"));
 }
 
 function logoAction(){
-  let logo = document.querySelector(".bar__logo");
-  logo.addEventListener("mouseover", () => {
-    logo.style.cursor = "pointer";
-  });
-  logo.addEventListener("click", e => {
-    window.location.reload();
-  });
-}
+    /**
+     * Function that gives the webpage logo and the home logo the ability of reloading the whole app
+     */
+    let logo = document.querySelector(".bar__logo");
+    let homeLogo = document.querySelector(".home--link");
+
+    logo.addEventListener("mouseover", () => {
+        logo.style.cursor = "pointer";
+    });
+
+    logo.addEventListener("click", e => {
+        window.location.reload();
+    });
+
+    homeLogo.addEventListener("click", e => {
+        e.preventDefault();
+        window.location.reload();
+    });
+    }
 
 // HTML string elements
 function scoreElement( questions, selectedAnswers, name = undefined ) {

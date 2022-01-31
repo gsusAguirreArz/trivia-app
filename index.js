@@ -3,138 +3,138 @@ const rawData = `
     {
         "id": 0,
         "category": 1,
-        "statement": "Q1 C1 statement",
+        "statement": "Why astronauts are weightless in space?",
         "options": [
             {
-                "option": "Q1 C1 opt1",
+                "option": "There is no gravity in space.",
                 "value": 1
             },
             {
-                "option": "Q1 C1 opt2",
+                "option": "The force of gavity decreases as the dsitance between two masses increases.",
                 "value": 2
             },
             {
-                "option": "Q1 C1 opt3",
+                "option": "Astronauts are plummeting around earth at cosntant speed.",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Q1 C1 opt1",
-            "value": 1
+            "option": "Astronauts are plummeting around earth at cosntant speed.",
+            "value": 3
         }
     },
     {
         "id": 1,
         "category": 1,
-        "statement": "Q2 C1 statement",
+        "statement": "How do atoms look like?",
         "options": [
             {
-                "option": "Q2 C1 opt1",
+                "option": "A cloud",
                 "value": 1
             },
             {
-                "option": "Q2 C1 opt2",
+                "option": "A solar system.",
                 "value": 2
             },
             {
-                "option": "Q2 C1 opt3",
+                "option": "A plum pudding.",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Q2 C1 opt3",
-            "value": 3
+            "option": "A cloud",
+            "value": 1
         }
     },
     {
         "id": 2,
         "category": 1,
-        "statement": "Q3 C1 statement",
+        "statement": "Why is the sky blue?",
         "options": [
             {
-                "option": "Q3 C1 opt1",
+                "option": "The reflection of the sea on the sky.",
                 "value": 1
             },
             {
-                "option": "Q3 C1 opt2",
+                "option": "Human eyes perceive violet light more sharply.",
                 "value": 2
             },
             {
-                "option": "Q3 C1 opt3",
+                "option": "Blue light is more likely to strike nitrogen and oxigen molecules.",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Q3 C1 opt2",
-            "value": 2
+            "option": "Rayleigh Scattering.",
+            "value": 3
         }
     },
     {
         "id": 3,
         "category": 2,
-        "statement": "Q1 C2 statement",
+        "statement": "What is the most common element in the human body?",
         "options": [
             {
-                "option": "Q1 C2 opt1",
+                "option": "Calcium",
                 "value": 1
             },
             {
-                "option": "Q1 C2 opt2",
+                "option": "Oxigen",
                 "value": 2
             },
             {
-                "option": "Q1 C2 opt3",
+                "option": "Carbon",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Q1 C2 opt3",
-            "value": 3
+            "option": "Oxigen",
+            "value": 2
         }
     },
     {
         "id": 4,
         "category": 2,
-        "statement": "Q2 C2 statement",
+        "statement": "Unlike most other fish, sharks have no ______?",
         "options": [
             {
-                "option": "Q2 C2 opt1",
+                "option": "liver",
                 "value": 1
             },
             {
-                "option": "Q2 C2 opt2",
+                "option": "bones",
                 "value": 2
             },
             {
-                "option": "Q2 C2 opt3",
+                "option": "heart",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Q2 C2 opt1",
-            "value": 1
+            "option": "bones",
+            "value": 2
         }
     },
     {
         "id": 5,
         "category": 2,
-        "statement": "Q3 C2 statement",
+        "statement": "Which organ do insects NOT have?",
         "options": [
             {
-                "option": "Q3 C2 opt1",
+                "option": "Lungs",
                 "value": 1
             },
             {
-                "option": "Q3 C2 opt2",
+                "option": "Brain",
                 "value": 2
             },
             {
-                "option": "Q3 C2 opt3",
+                "option": "Stomach",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Q3 C2 opt1",
+            "option": "Lungs",
             "value": 1
         }
     }
@@ -339,12 +339,12 @@ function answersContent( questions, selectedAnswers, name ) {
                 {
                     idAt: "cat_one_btn",
                     nameAt: "again_cat_one_btn",
-                    valAt: "Play Again Cat 1",
+                    valAt: "Play Again Physics",
                 },
                 {
                     idAt: "cat_two_btn",
                     nameAt: "again_cat_two_btn",
-                    valAt: "Play Again Cat 2",
+                    valAt: "Play Again Biology",
                 },
                 {
                     idAt: "end_btn",
@@ -425,12 +425,12 @@ function catContent( inputName, time ) {
         {
             idAt: "cat_one_btn",
             nameAt: "cat_one_btn",
-            valAt: "Play Cat 1",
+            valAt: "Play Physics",
         },
         {
             idAt: "cat_two_btn",
             nameAt: "cat_two_btn",
-            valAt: "Play Cat 2",
+            valAt: "Play Biology",
         },
     ] );
 

@@ -14,12 +14,12 @@ const rawData = `
                 "value": 2
             },
             {
-                "option": "Astronauts are plummeting around earth at cosntant speed.",
+                "option": "Astronauts are plummeting around earth at constant speed.",
                 "value": 3
             }
         ],
         "answer": {
-            "option": "Astronauts are plummeting around earth at cosntant speed.",
+            "option": "Astronauts are plummeting around earth at constant speed.",
             "value": 3
         }
     },
@@ -56,7 +56,7 @@ const rawData = `
                 "value": 1
             },
             {
-                "option": "Human eyes perceive violet light more sharply.",
+                "option": "Human eyes perceive violet light most sharply.",
                 "value": 2
             },
             {
